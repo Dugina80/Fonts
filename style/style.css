@@ -1,0 +1,184 @@
+.Header {
+  width: 1440px;
+  height: 80px;
+}
+
+.Header-block {
+  left: 120px;
+  top: 13px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  margin-top: 13px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.Header-block_language {
+  font-family: "Tourney";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 0;
+  margin-right: 50px;
+}
+
+.Header-block_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.Header-block_nav-text {
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+
+  letter-spacing: 0.03em;
+
+  color: #000000;
+
+  word-spacing: normal;
+}
+
+.Header-block_Logo {
+  width: 238px;
+  height: 54px;
+  left: 962px;
+  top: 0px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 90px;
+  gap: 70px;
+
+  width: 1200px;
+  height: 2225px;
+  left: 120px;
+  top: 150px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 70px;
+}
+
+.Chapter1 {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  width: 1200px;
+  height: 221px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.Chapter-title {
+  font-family: "Francois One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.Chapter-title_sup {
+  font-family: "Farro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+  text-transform: none;
+}
+
+.Chapter-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+
+  color: #000000;
+  margin: 0;
+}
+
+.Chapter2 {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  width: 1200px;
+  height: 318px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.Chapter3 {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  width: 1200px;
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.color {
+  background-color: rgb(192, 188, 188);
+}
+
+.Chapter4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  width: 1200px;
+  height: 393px;
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
