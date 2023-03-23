@@ -1,25 +1,31 @@
+.Documentation {
+  position: relative;
+  max-width: 1440px;
+  height: 3081px;
+
+  margin: 0 auto;
+}
+
 .Header {
   width: 1440px;
   height: 80px;
+  
 }
 
 .Header-block {
-  left: 120px;
-  top: 13px;
-
+  max-width: 1400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 0px;
+  gap: 100px;
+  padding: 10px 120px 0px 120px;
 
-  margin-top: 13px;
-  margin-left: 120px;
-  margin-right: 120px;
+  position: fixed;
+  z-index: 2;
 }
 
 .Header-block_language {
-  font-family: "Tourney";
+  font-family: "Tourney", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -27,22 +33,16 @@
 
   text-align: center;
   letter-spacing: 0.04em;
-  margin: 0;
-  margin-right: 50px;
 }
 
 .Header-block_nav {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding: 0px;
-  gap: 10px;
-  margin-top: 30px;
+  gap: 30px;
 }
 
 .Header-block_nav-text {
-  font-family: "Staatliches";
+  font-family: "Staatliches", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -56,38 +56,62 @@
 }
 
 .Header-block_Logo {
+  position: absolute;
   width: 238px;
   height: 54px;
   left: 962px;
   top: 0px;
 }
 
+.grid-conteiner {
+  display: grid;
+grid-template-columns: 385px 1fr;
+grid-template-rows: 1fr;
+gap: 50px;
+grid-template-areas: "side main";
+
+
+}
+
+ .side-bar {
+
+position: sticky;
+top: 180px;
+height: 100%;
+gap: 60px;
+
+ }
+
+ .side-bar_line {
+ border-bottom: 1px solid;
+ padding-top: 30px;
+ }
+
 .main-text {
-  display: flex;
+ 
+   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 0px 90px;
-  gap: 70px;
+  max-width: 100%;
 
-  width: 1200px;
-  height: 2225px;
-  left: 120px;
-  top: 150px;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-bottom: 70px;
+
+background-image: url("/assets/bg-picture.png");
+background-repeat: no-repeat;
+background-position: fixed;
+background-position: right  top 16px;
 }
 
+
 .Chapter1 {
-  margin-top: 70px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
 
-  width: 1200px;
-  height: 221px;
+
 
   flex: none;
   order: 0;
@@ -95,8 +119,9 @@
   flex-grow: 0;
 }
 
-.Chapter-title {
-  font-family: "Francois One";
+  h2 {
+    margin-bottom: 0;
+  font-family: "Francois One", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -108,7 +133,7 @@
 }
 
 .Chapter-title_sup {
-  font-family: "Farro";
+  font-family: "Farro", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -120,7 +145,7 @@
 }
 
 .Chapter-text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -128,6 +153,7 @@
 
   color: #000000;
   margin: 0;
+
 }
 
 .Chapter2 {
@@ -138,8 +164,7 @@
   padding: 0px;
   gap: 40px;
 
-  width: 1200px;
-  height: 318px;
+
 
   flex: none;
   order: 1;
@@ -155,7 +180,7 @@
   padding: 0px;
   gap: 40px;
 
-  width: 1200px;
+ 
 
   flex: none;
   order: 2;
@@ -174,8 +199,6 @@
   padding: 0px;
   gap: 40px;
 
-  width: 1200px;
-  height: 393px;
 
   flex: none;
   order: 3;
