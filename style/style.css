@@ -70,21 +70,11 @@
   top: 0px;
 }
 
-.grid-conteiner {
-  display: grid;
-grid-template-columns: 385px 1fr;
-grid-template-rows: 1fr;
-gap: 50px;
-grid-template-areas: "side main";
-
-
-}
-
  .side-bar {
 
 position: sticky;
 top: 120px;
-height: max-content
+height: max-content;
 gap: 60px;
 
  }
@@ -104,8 +94,9 @@ gap: 60px;
 
 background-image: url("/assets/bg-picture.png");
 background-repeat: no-repeat;
-background-position: fixed;
-background-position: right  top 16px;
+  background-size: 600px;
+  background-position: right;
+  background-attachment: fixed;
 }
 
 
