@@ -1,14 +1,23 @@
 .Documentation {
   position: relative;
   max-width: 1440px;
-  height: 3081px;
-
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 }
 
 .Header {
   width: 1440px;
   height: 80px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #FFFFFF;
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  flex: 0 0 100%;
   
 }
 
@@ -20,9 +29,7 @@
   gap: 100px;
   padding: 10px 120px 0px 120px;
 
-  position: fixed;
-  z-index: 2;
-}
+ }
 
 .Header-block_language {
   font-family: "Tourney", sans-serif;
@@ -76,8 +83,8 @@ grid-template-areas: "side main";
  .side-bar {
 
 position: sticky;
-top: 180px;
-height: 100%;
+top: 120px;
+height: max-content
 gap: 60px;
 
  }
@@ -88,7 +95,6 @@ gap: 60px;
  }
 
 .main-text {
- 
    display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -110,8 +116,6 @@ background-position: right  top 16px;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-
-
 
   flex: none;
   order: 0;
@@ -142,6 +146,7 @@ background-position: right  top 16px;
 
   color: #000000;
   text-transform: none;
+
 }
 
 .Chapter-text {
@@ -179,8 +184,6 @@ background-position: right  top 16px;
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-
- 
 
   flex: none;
   order: 2;
